@@ -19,6 +19,7 @@ Issue | Branch         | Description                                  | Priority
 [#4]  | remember-me    | Add a "Remember me" checkbox                 | Medium   | Authentication
 [#5]  | forgot-password| Add a "forgot password" link                 | Medium   | Authentication
 [#6]  | type-email     | Change the email input type to "email"       | Low      | UI/UX
+[#7]  | required-input | Make both email and password inputs required | Low      | UI/UX
 
 [#1]: /../../issues/1
 [#2]: /../../issues/2
@@ -26,6 +27,7 @@ Issue | Branch         | Description                                  | Priority
 [#4]: /../../issues/4
 [#5]: /../../issues/5
 [#6]: /../../issues/6
+[#7]: /../../issues/7
 
 
 ## How to complete a task
