@@ -1,0 +1,1 @@
+The form currently uses the "GET" method, which is not secure for transmitting sensitive information like passwords. Change the form method to "POST".

@@ -1,0 +1,67 @@
+on: repository_dispatch
+name: Create issues for the exercise
+permissions:
+  contents: read
+  issues: write
+jobs:
+  create-issues:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create Issue 1
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Change the password input type to "password"
+          content-filepath: ./.github/issue-1.md
+          labels: |
+            bug
+            security
+            enhancement
+      - name: Create Issue 2
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Change the form method to "POST"
+          content-filepath: ./.github/issue-2.md
+          labels: |
+            bug
+            security
+            enhancement
+      - name: Create Issue 3
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Add Pico.css for styling
+          content-filepath: ./.github/issue-3.md
+          labels: |
+            ui/ux
+            enhancement
+      - name: Create Issue 4
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Add a "Remember me" checkbox
+          content-filepath: ./.github/issue-4.md
+          labels: |
+            authentication
+            feature
+      - name: Create Issue 5
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Add a "forgot password" link
+          content-filepath: ./.github/issue-5.md
+          labels: |
+            authentication
+            feature
+      - name: Create Issue 6
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Change the email input type to "email"
+          content-filepath: ./.github/issue-6.md
+          labels: |
+            ui/ux
+            enhancement
+      - name: Create Issue 7
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Make both email and password inputs required
+          content-filepath: ./.github/issue-7.md
+          labels: |
+            ui/ux
+            enhancement

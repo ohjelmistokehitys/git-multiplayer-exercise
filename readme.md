@@ -1,4 +1,4 @@
-# Git "multiplayer" practice
+# Git "multiplayer" exercise
 
 This repository consists of a simple HTML and CSS application that displays a login form, but does not include any actual functionality.
 
@@ -61,3 +61,20 @@ Issue | Branch         | Description                                  | Priority
 - Keep your branches focused on a single task to make code reviews easier.
 - Write clear and descriptive commit messages.
 - When there are changes in the main branch, rebase your branch onto the latest main branch.
+
+
+## Preparing the exercise (for teachers)
+
+1. Create a new Git repository using this template. We do not recommend forking the repository, as that can add confusion regarding whether to merge changes to the fork or upstream repository.
+
+2. Create the issues listed in the "Tasks" section in your repository.
+
+3. Update the repository settings in GitHub. We recommend:
+
+   * Enabling branch protection for the main branch.
+   * Requiring pull request reviews before merging.
+   * Requiring at least one approving review before merging.
+   * Enabling GitHub pages and setting the source to the main branch root.
+   * Also, "Always suggest updating pull request branches" should be enabled.
+
+4. Invite your students to the repository and assign each one, pair or team a specific issue to work on. Provide them with the necessary instructions to complete the exercise.

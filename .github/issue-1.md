@@ -1,0 +1,1 @@
+The "password" input on the page displays the user's password in plain text. Fix this by changing the input type to "password".
