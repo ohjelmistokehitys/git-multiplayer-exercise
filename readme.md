@@ -42,17 +42,28 @@ Issue | Branch         | Description                                  | Priority
 3. Test your changes to ensure they work as expected.
 
 4. Commit your changes:
+
    ```
-   git add <files>
+   git status           # see which files have changed
+   git add <files>      # add changes to the staging area
    git commit -m "Describe your changes"
    ```
+
+   It is also recommended to include the issue number in your commit message. GitHub will automatically link the issue with your commit, which makes it easier to track progress. Also, consider using the "Fixes #issue-number" syntax in your commit message to automatically close the issue when the pull request is merged:
+
+   ```
+   git commit -m "Change password input type to 'password'. Fixes #1."
+   ```
+
+   You can read more about [closing issues via commit messages in the GitHub blog](https://github.blog/news-insights/product-news/closing-issues-via-commit-messages/).
 
 5. Push your branch to the remote repository:
    ```
    git push -u origin <your-branch-name>
    ```
+   The `-u` flag sets the upstream for your branch, so in the future you can just use `git push` without specifying the branch.
 
-6. Create a pull request to merge your changes into the main branch.
+6. Create a pull request to merge your changes into the main branch. Either use the GitHub website or the GitHub CLI.
 
 
 ## Notes
@@ -65,14 +76,15 @@ Issue | Branch         | Description                                  | Priority
 
 ## Preparing the exercise (for teachers)
 
-1. Create a new Git repository using this template. We do not recommend forking the repository, as that can add confusion regarding whether to merge changes to the fork or upstream repository.
+1. Create a new Git repository using this template.
 
-2. Create the issues listed in the "Tasks" section in your repository.
+   We do not recommend forking the repository, as that can add confusion regarding whether to merge changes to the fork or upstream repository.
+
+2. Create the issues listed in the "Tasks" section in your repository. You can use the provided GitHub action to automate this, by visiting the "actions" tab and triggering the "Create issues for the exercise" workflow.
 
 3. Update the repository settings in GitHub. We recommend:
 
    * Enabling branch protection for the main branch.
-   * Requiring pull request reviews before merging.
    * Requiring at least one approving review before merging.
    * Enabling GitHub pages and setting the source to the main branch root.
    * Also, "Always suggest updating pull request branches" should be enabled.
