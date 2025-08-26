@@ -1,4 +1,4 @@
-on: repository_dispatch
+on: workflow_dispatch
 name: Create issues for the exercise
 permissions:
   contents: read
