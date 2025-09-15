@@ -90,3 +90,10 @@ Issue | Branch         | Description                                  | Priority
    * Also, "Always suggest updating pull request branches" should be enabled.
 
 4. Invite your students to the repository and assign each one, pair or team a specific issue to work on. Provide them with the necessary instructions to complete the exercise.
+
+
+## About the exercise
+
+This exercise has been created by Teemu Havulinna and is licensed under the [Creative Commons BY-NC-SA license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+AI tools such as ChatGPT and GitHub Copilot have been used in the implementation of the task description, source code, data files and tests.
