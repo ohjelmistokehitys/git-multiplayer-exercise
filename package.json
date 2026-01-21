@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "lint": "eslint"
+  },
+  "devDependencies": {
+    "@html-eslint/eslint-plugin": "^0.53.0"
+  },
+  "type": "module"
+}
