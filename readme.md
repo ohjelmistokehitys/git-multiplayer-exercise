@@ -30,6 +30,17 @@ Issue | Branch         | Description                                  | Priority
 [#7]: /../../issues/7
 
 
+## How to start working on this repository
+
+1. Clone the repository to your local machine or open it in a web-based IDE such as GitHub Codespaces:
+
+   ```
+   git clone <repository-url>
+   ```
+
+> [!TIP]
+> Using a development container or Codespace is optional. You are not expected to install any dependencies or run any scripts during this exercise. The focus is on using Git to manage changes in a collaborative environment.
+
 ## How to complete a task
 
 1. Create a new branch for your task:
@@ -40,6 +51,14 @@ Issue | Branch         | Description                                  | Priority
 2. Make the necessary changes to the codebase.
 
 3. Test your changes to ensure they work as expected.
+
+   While running a local http server is not required, you may use a simple http server to test your changes. For example, you can use Python's built-in http server:
+
+   ```
+   python3 -m http.server src
+   ```
+
+   Microsoft has also published a [live server](https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server) extension for VS Code, which can be used to run a local http server and automatically reload the page when changes are made.
 
 4. Commit your changes:
 
@@ -72,24 +91,6 @@ Issue | Branch         | Description                                  | Priority
 - Keep your branches focused on a single task to make code reviews easier.
 - Write clear and descriptive commit messages.
 - When there are changes in the main branch, rebase your branch onto the latest main branch.
-
-
-## Preparing the exercise (for teachers)
-
-1. Create a new Git repository using this template.
-
-   We do not recommend forking the repository, as that can add confusion regarding whether to merge changes to the fork or upstream repository.
-
-2. Create the issues listed in the "Tasks" section in your repository. You can use the provided GitHub action to automate this, by visiting the "actions" tab and triggering the "Create issues for the exercise" workflow.
-
-3. Update the repository settings in GitHub. We recommend:
-
-   * Enabling branch protection for the main branch.
-   * Requiring at least one approving review before merging.
-   * Enabling GitHub pages and setting the source to the main branch root.
-   * Also, "Always suggest updating pull request branches" should be enabled.
-
-4. Invite your students to the repository and assign each one, pair or team a specific issue to work on. Provide them with the necessary instructions to complete the exercise.
 
 
 ## About the exercise

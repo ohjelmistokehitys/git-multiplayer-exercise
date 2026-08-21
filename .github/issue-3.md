@@ -1,12 +1,25 @@
-Pico.css is a minimal CSS framework that can be used to style the login form. Add the necessary link to the Pico.css stylesheet in the HTML file.
+# Add Pico.css styling
 
-We want to use the classless version and use just semantic HTML, and use a CDN instead of including the styles in the app. See https://picocss.com/docs/classless for more info.
+## Objective
 
-Example:
+Use Pico.css to give the login page a consistent baseline style without adding a local CSS framework dependency.
 
-```html
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
->
-```
+## Requirements
+
+- Add the Pico.css classless stylesheet to the document head.
+- Load the stylesheet from a CDN, using the versioned URL documented at [Pico.css classless](https://picocss.com/docs/classless).
+- Do not add framework-specific classes for the login form.
+- Do not download or copy the framework into the repository.
+
+## Acceptance criteria
+
+- The page includes a stylesheet link for Pico.css version 2's classless build.
+- The link loads from the jsDelivr CDN.
+- The login form remains functional and is represented with semantic HTML.
+- Existing application styles are not unnecessarily rewritten.
+
+## Verification
+
+- Open the page with network access and confirm that the Pico.css stylesheet loads.
+- Check the rendered page for the expected Pico.css baseline styling.
+- Confirm that the HTML remains readable without relying on Pico-specific classes.
