@@ -8,9 +8,9 @@
 
 3. Update the repository settings in GitHub. We recommend:
 
-   * Enabling branch protection for the main branch.
+   * Enabling branch protection for the trunk branch.
    * Requiring at least one approving review before merging.
-   * Enabling GitHub pages and setting the source to the main branch root.
+   * Enabling GitHub pages and setting the source to the src folder.
    * Also, "Always suggest updating pull request branches" should be enabled.
 
 4. Invite your students to the repository and assign each one, pair or team a specific issue to work on. Provide them with the necessary instructions to complete the exercise.
